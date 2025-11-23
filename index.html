@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Up In Smoke - Product Shot Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                dark: '#021814',    /* Very deep jungle green background */
+                panel: '#062c24',   /* Panel background */
+                primary: '#115e4e', /* Brighter green for UI elements */
+                accent: '#ff9671',  /* Peach/Orange from the "420 VAPES" text */
+                cream: '#f1f5f9',   /* Off-white for text (Slate 100 approx) */
+                leaf: '#4ade80',    /* Bright green for success/active states */
+              }
+            },
+            fontFamily: {
+              display: ['Anton', 'sans-serif'],
+              body: ['Montserrat', 'sans-serif'],
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;500;600;700&display=swap');
+      
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #021814;
+        color: #f1f5f9;
+      }
+      
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #062c24;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #115e4e;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ff9671;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
